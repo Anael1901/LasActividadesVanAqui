@@ -1,0 +1,166 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPqzdlaenLgcrQX8Wz0ZC2F",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Anael1901/LasActividadesVanAqui/blob/main/IA_Ejercicio1_AnaelLopez_1991884\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A2:Ejercicios Básicos en Python, Anael Ernesto Lopez Aguilar, 1991884, N1"
+      ],
+      "metadata": {
+        "id": "XOcj5hPk9E28"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 41,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sBEQ_k0o8Z_W",
+        "outputId": "bfe6f490-dfc9-432c-c94a-d08b0e45e6c1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¿Cual es su nombre? ana\n",
+            "adios\n"
+          ]
+        }
+      ],
+      "source": [
+        "saludo = input(\"¿Cual es su nombre? \") #variable para el nombre\n",
+        "if saludo == \"Ana\": #primer if para eliminar los nombres no deseados\n",
+        "   print(\"adios\")\n",
+        "elif saludo == \"Juan\":\n",
+        "    print(\"adios\")\n",
+        "elif saludo == \"Pedro\":\n",
+        "    print(\"adios\")\n",
+        "elif saludo == \"juan\":\n",
+        "    print(\"adios\")\n",
+        "elif saludo == \"pedro\":\n",
+        "    print(\"adios\")\n",
+        "elif saludo == \"ana\":\n",
+        "    print(\"adios\")\n",
+        "else: #para saludar cualquier otro nombre \n",
+        "      print(\"hola\", saludo) #saludo\n",
+        "      "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "def lista (lis): #PREPARAMOS LA FUNCION\n",
+        "  print (lis[-1]) #EL ULTIMO ELEMENTO\n",
+        "  print (lis[::-1]) #USAMOS LA REGLA DE RANGOS PARA INVERTIR PONIENDOLO EN ORDEN [INICIO,FIN,DE -1 EN -1]\n",
+        "    "
+      ],
+      "metadata": {
+        "id": "TDtf-faRBZrO"
+      },
+      "execution_count": 178,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "listilla = [\"ana\",\"valeria\",\"evelyn\",\"juan\",\"pedro\",\"roberto\"] #AQUI VA LA LISTA\n",
+        "lista(listilla) #USAMOS LA FUNCION\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8m9aYjvc8kza",
+        "outputId": "c5ba9909-cedf-4f23-8996-2e4b3db8427d"
+      },
+      "execution_count": 179,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "roberto\n",
+            "['roberto', 'pedro', 'juan', 'evelyn', 'valeria', 'ana']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def marco (letras): #preparamos funcion\n",
+        "  x = len(letras) #sacamos el numero de elementos para usarlo en el while\n",
+        "  i = 0\n",
+        "  while i<x:\n",
+        "    print(letras[i])#imprimimos cada posicion posible de i hasta llegar a x\n",
+        "    i+=1\n",
+        "   "
+      ],
+      "metadata": {
+        "id": "HYiHR_58Sw8q"
+      },
+      "execution_count": 213,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "letrero = [\"hola\",\"a\",\"todos\",\"esto\",\"es\",\"un\",\"marco\"]\n",
+        "marco(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_slbhmypUkak",
+        "outputId": "6d61523e-e69e-480a-beb3-edaebc6156c1"
+      },
+      "execution_count": 214,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hola\n",
+            "a\n",
+            "todos\n",
+            "esto\n",
+            "es\n",
+            "un\n",
+            "marco\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
